@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="content-wrapper">
     <div class="sidebar">
         <div class="profile">
             <img src="profile.jpg" alt="Profile Picture">
@@ -44,37 +45,38 @@
         </section>
         <!-- Additional sections for Photography Collection, Game Projects, About Me, Blog, and Contact -->
     </div>
-    <footer>
-        <div class="footer-content">
-            <ul class="quick-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#photography">Photography</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+</div>
+<footer>
+    <div class="footer-content">
+        <ul class="quick-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer>
-    <script>
-        // Add this script at the end of the body
-        function rotateSlides() {
-            const slides = document.querySelectorAll('.slideshow img');
-            let currentSlide = 0;
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    // Add this script at the end of the body
+    function rotateSlides() {
+        const slides = document.querySelectorAll('.slideshow img');
+        let currentSlide = 0;
 
-            setInterval(() => {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }, 5000); // Change slide every 5 seconds
-        }
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000); // Change slide every 5 seconds
+    }
 
-        document.addEventListener('DOMContentLoaded', rotateSlides);
-    </script>
+    document.addEventListener('DOMContentLoaded', rotateSlides);
+</script>
 </body>
 </html>
