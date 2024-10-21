@@ -8,75 +8,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="content-wrapper">
-    <div class="sidebar">
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture">
-            <h2>Your Name</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#photography">Photography Collection</a></li>
-                <li><a href="#projects">Game Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="image-deck">
-        <div class="slideshow">
-            <img src="hero-image.jpg" alt="Slideshow Image 1" class="active">
-            <img src="hero-image.jpg" alt="Slideshow Image 2">
-            <img src="hero-image.jpg" alt="Slideshow Image 3">
-            <img src="hero-image.jpg" alt="Slideshow Image 4">
-            <!-- Add more images as needed -->
-        </div>
-    </div>
-    <div class="main-content">
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Hello! I'm <span class="poppins-semibold">Your Name</span>, A Software Engineer & Photographer</h1>
-                <p class="poppins-semibold">I'm a software engineer with a passion for immersive VR experiences and a photographer who captures the beauty of the world. I love creating games that tell stories and photos that evoke emotions.</p>
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>Your Name</h2>
             </div>
-        </section>
-        <!-- Additional sections for Photography Collection, Game Projects, About Me, Blog, and Contact -->
-    </div>
-</div>
-<footer>
-    <div class="footer-content">
-        <ul class="quick-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#photography">Photography</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#photography">Photography Collection</a></li>
+                    <li><a href="#projects">Game Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="main-area">
+            <div class="top-content">
+                <div class="image-deck">
+                    <div class="slideshow">
+                        <img src="hero-image-1.jpg" alt="Slideshow Image 1" class="active">
+                        <img src="hero-image-2.jpg" alt="Slideshow Image 2">
+                        <img src="hero-image-1.jpg" alt="Slideshow Image 3">
+                        <img src="hero-image-2.jpg" alt="Slideshow Image 4">
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                <div class="main-content">
+                    <section id="home" class="hero">
+                        <div class="hero-content">
+                            <div class="desc">
+                                <span class="hello">Hello! I'm</span>
+                                <!-- <h1 class="big-letter">Hai Xu</h1> -->
+                                <h1 class="brief"><span class="dark">Hai Xu</span> A Software Engineer & Photographer. <span class="dark">I Create & Capture Life</span></h1>
+                                <p class="detail">I'm a software engineer with a passion for immersive VR experiences and a photographer who captures the beauty of the world. I love creating games that tell stories and photos that evoke emotions.</p>
+                                <h3 class="signature">Hai Xu</h3>
+                                <ul class="ftco-social mt-3">
+                                    <li class="ftco-animate fadeInUp ftco-animated"><a
+                                            href="https://preview.colorlib.com/theme/louie/#"><span
+                                                class="icon-twitter"></span></a></li>
+                                    <li class="ftco-animate fadeInUp ftco-animated"><a
+                                            href="https://preview.colorlib.com/theme/louie/#"><span
+                                                class="icon-facebook"></span></a></li>
+                                    <li class="ftco-animate fadeInUp ftco-animated"><a
+                                            href="https://preview.colorlib.com/theme/louie/#"><span
+                                                class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Additional sections for Photography Collection, Game Projects, About Me, Blog, and Contact -->
+                </div>
+            </div>
+            <section class="art-works">
+                <h2>My Art Works</h2>
+                <div class="photo-row">
+                    <img src="hero-image-1.jpg" alt="Art Work 1">
+                    <img src="hero-image-2.jpg" alt="Art Work 2">
+                    <img src="hero-image-1.jpg" alt="Art Work 3">
+                    <img src="hero-image-2.jpg" alt="Art Work 4">
+                    <!-- Add more images as needed -->
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <ul class="quick-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#photography">Photography</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
     </div>
-</footer>
-<script>
-    // Add this script at the end of the body
-    function rotateSlides() {
-        const slides = document.querySelectorAll('.slideshow img');
-        let currentSlide = 0;
+    <script>
+        // Replace the existing script with this updated version
+        function rotateSlides() {
+            const slides = document.querySelectorAll('.slideshow img');
+            let currentSlide = 0;
 
-        setInterval(() => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }, 5000); // Change slide every 5 seconds
-    }
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 2000); // Change slide every 5 seconds
+        }
 
-    document.addEventListener('DOMContentLoaded', rotateSlides);
-</script>
+        document.addEventListener('DOMContentLoaded', rotateSlides);
+    </script>
 </body>
 </html>
